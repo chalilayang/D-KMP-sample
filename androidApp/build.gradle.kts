@@ -10,7 +10,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":composables"))
+//    implementation(project(":composables"))
     implementation(project(":shared"))
     implementation("androidx.activity:activity-compose:1.3.0-beta02")
     implementation("androidx.lifecycle:lifecycle-process:2.3.1")
@@ -43,10 +43,6 @@ android {
             // R8 configuration files. */
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-    }
-    lint {
-        isWarningsAsErrors = true
-        isAbortOnError = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
